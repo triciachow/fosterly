@@ -4,9 +4,48 @@ This project was done for the University of London, CM3070 Final Project module.
 
 # How to run the app on localhost?
 
-1. Run `git clone https://github.com/triciachow/fosterly.git` in your desired location on your terminal. You should see two folders: client and server.
-2. To get the backend server up and running, within the "server" folder, run `npm install`. Then, run `npm run start:backend`. You should see a message "Server running on port 8000... Database connected!" on your terminal.
-3. To get the frontend up and running, open a separate terminal and within the "client" folder, run `npm install`. Then, run `npm run start:frontend`.
+1. Run the following command in your terminal:
+
+```sh
+git clone https://github.com/triciachow/fosterly.git
+```
+
+2. To start the backend, ensure you are at the root of `server`:
+
+```sh
+cd server
+```
+
+Install backend dependencies:
+
+```sh
+npm install
+```
+
+Then run:
+
+```sh
+npm run start:backend
+```
+
+3. To start the frontend, ensure you are at the root of `client`:
+
+```sh
+cd client
+```
+
+Install backend dependencies:
+
+```sh
+npm install
+```
+
+Then run:
+
+```sh
+npm run start:frontend
+```
+
 4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 # How to navigate around the app?
