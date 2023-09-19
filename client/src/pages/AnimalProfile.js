@@ -43,7 +43,7 @@ const AnimalProfile = () => {
 							<img
 								src={animalData.image}
 								alt="Animal image"
-								className="h-[400px] rounded-lg object-cover"
+								className="h-[400px] w-[400px] rounded-lg object-cover"
 							/>
 						</div>
 						<div>
@@ -78,7 +78,7 @@ const AnimalProfile = () => {
 						</div>
 
 						<a
-							href="/"
+							href={`mailto:${animalData.shelterEmail}`}
 							className="w-full bg-primary-600 text-white font-semibold rounded-lg py-4 text-center"
 						>
 							Contact Shelter

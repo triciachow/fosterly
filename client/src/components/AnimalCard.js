@@ -10,7 +10,7 @@ const AnimalCard = ({ data }) => {
 			>
 				<div className="shadow-sm rounded-b-xl ">
 					<img
-						className="w-full h-auto rounded-t-xl"
+						className="w-full h-[300px] object-cover rounded-t-xl"
 						src={data.image}
 						alt="Animal image"
 					/>
@@ -18,14 +18,14 @@ const AnimalCard = ({ data }) => {
 						<h3 className="text-primary-600 font-semibold text-xl">
 							{data.name}
 						</h3>
-						<div className="flex items-center font-medium text-xs">
+						<div className="flex items-center font-medium text-sm">
 							<p>{data.dob}</p>
 							<Dot />
 							<p>{data.breed}</p>
 							<Dot />
 							<p className="capitalize">{data.gender}</p>
 						</div>
-						<p className="text-gray-600">{data.description}</p>
+						{/* <p className="text-gray-600">{data.description}</p> */}
 					</div>
 				</div>
 			</a>
