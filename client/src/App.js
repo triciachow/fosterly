@@ -22,7 +22,7 @@ const App = () => {
 				<Route path="/matches/:id" element={<Matches />} />
 				<Route path="/animal-profile/:id" element={<AnimalProfile />} />
 
-				{/* <Route path="/admin/login" element={<AdminLogin />} /> */}
+				<Route path="/admin/login" element={<AdminLogin />} />
 				<Route path="/admin/dashboard" element={<AdminDashboard />} />
 				<Route path="/admin/add-new" element={<AdminAddNew />} />
 			</Routes>

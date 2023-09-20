@@ -25,7 +25,7 @@ const AnimalTable = () => {
 
 	return (
 		<>
-			<div className="flex flex-col w-full">
+			<div className="flex flex-col w-full pb-10">
 				<h1 className="text-4xl font-bold mb-6">Animal Listings</h1>
 				{animals.length > 0 ? (
 					<table className="table-auto bg-white text-sm">
@@ -46,9 +46,7 @@ const AnimalTable = () => {
 								<th className="border border-primary-200 p-2 text-left">
 									Gender
 								</th>
-								<th className="border border-primary-200 p-2 text-left">
-									Date of Birth
-								</th>
+								<th className="border border-primary-200 p-2 text-left">DOB</th>
 								<th className="border border-primary-200 p-2 text-left w-2/12">
 									Description
 								</th>
@@ -107,10 +105,10 @@ const AnimalTable = () => {
 										{animal.createdAt}
 									</td>
 									<td className="border border-primary-200 p-2 text-left">
-										<a href="/edit" className="text-primary-600 mr-4">
+										<a href="#" className="text-primary-600 mr-4">
 											Edit
 										</a>
-										<a href="/delete" className="text-red-500">
+										<a href="#" className="text-red-500">
 											Delete
 										</a>
 									</td>
