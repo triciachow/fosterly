@@ -10,6 +10,12 @@ This project was done for the University of London, CM3070 Final Project module.
 git clone https://github.com/triciachow/fosterly.git
 ```
 
+Go to the root of the project:
+
+```sh
+cd fosterly
+```
+
 Open the project in your code editor (If you're using VS Code you may run this code):
 
 ```sh
