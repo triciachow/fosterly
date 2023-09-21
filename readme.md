@@ -34,12 +34,6 @@ Install backend dependencies:
 npm install
 ```
 
-Create `.env` file at the root of `server` and add this line:
-
-```
-MONGODB_URI=mongodb+srv://admin:0NavoaG80rI5oRsh@Cluster0.pyganty.mongodb.net/?retryWrites=true&w=majority
-```
-
 Then run:
 
 ```sh
