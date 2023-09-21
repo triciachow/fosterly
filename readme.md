@@ -46,7 +46,7 @@ npm run start:backend
 cd client
 ```
 
-Install backend dependencies:
+Install frontend dependencies:
 
 ```sh
 npm install
