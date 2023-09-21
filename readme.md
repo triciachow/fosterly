@@ -10,6 +10,12 @@ This project was done for the University of London, CM3070 Final Project module.
 git clone https://github.com/triciachow/fosterly.git
 ```
 
+Open the project in your code editor (If you're using VS Code you may run this code):
+
+```sh
+code .
+```
+
 2. To start the backend, ensure you are at the root of `server`:
 
 ```sh
@@ -22,13 +28,19 @@ Install backend dependencies:
 npm install
 ```
 
+Create `.env` file at the root of `server` and add this line:
+
+```
+MONGODB_URI=mongodb+srv://admin:0NavoaG80rI5oRsh@Cluster0.pyganty.mongodb.net/?retryWrites=true&w=majority
+```
+
 Then run:
 
 ```sh
 npm run start:backend
 ```
 
-3. To start the frontend, ensure you are at the root of `client`:
+3. (In a new terminal) To start the frontend, ensure you are at the root of `client`:
 
 ```sh
 cd client

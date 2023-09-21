@@ -6,6 +6,9 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const database = mongoose.connection;
 require("dotenv").config();
+
+// Ensure you have a .env file at the root and add this line:
+// MONGODB_URI=mongodb+srv://admin:0NavoaG80rI5oRsh@Cluster0.pyganty.mongodb.net/?retryWrites=true&w=majority
 const mongoString = process.env.MONGODB_URI;
 
 const accountRoutes = require("./routes/accountRoutes");
@@ -26,18 +29,6 @@ database.on("error", (err) => {
 database.once("connected", () => {
 	console.log("Database connected!");
 });
-
-const corsOptions = {
-	origin: function (origin, callback) {
-		if (!origin || whitelist.indexOf(origin) !== -1) {
-			callback(null, true);
-		} else {
-			callback(new error("Not allowed by CORS"));
-		}
-	},
-	preflightContinue: false,
-	credentials: true,
-};
 
 app.use(cors());
 app.use(express.json());
